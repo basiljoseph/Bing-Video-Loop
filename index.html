@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title>
+			Bing Videoes
+		</title>
+		<script type="text/javascript">
+			function readFile (filePath) 
+			{
+				var output = "";
+				if(filePath.files && filePath.files[0[])
+				{
+		            reader.onload = function (e) 
+		            {
+                		output = e.target.result;
+                		displayContents(output);
+            		}
+					reader.readAsText(filePath.files[0]);
+				var file = FileReader();
+
+			}
+		</script>
+	</head>
+	<body>
+		<video controls loop autoplay width="1200" height="675">
+			<source src="MoonJellyfish_Corbis_320009_061_EN-US.ogv" type="video/ogg">
+		</video>
+
+		<div id="container">    
+        <input type="file" onchange='readFile(this)' />
+        <br/>
+        <hr/>   
+        <h3>Contents of the Text file:</h3>
+        <div id="main">
+            ...
+        </div>
+    </div>
+	</body>
+</html>
